@@ -1,0 +1,12 @@
+{
+    "expo": {
+        "name": "Events Listing",
+        "icon": "./assets/app_icon.png",
+        "version": "1.0.0",
+        "slug": "event_listing",
+        "android": {
+            "package": "com.emumba.event_listing",
+            "versionCode": 1
+        }
+    }
+}

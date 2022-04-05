@@ -1,21 +1,44 @@
 {
+  "homepage": "http://junaiddurrani.github.io/events_listing",
+  "name": "events_listing",
+  "version": "1.0.0",
+  "private": true,
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.17.3",
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-native-picker/picker": "^2.4.0",
+    "@react-navigation/bottom-tabs": "^6.3.1",
+    "@react-navigation/native": "^6.0.10",
+    "@react-navigation/stack": "^6.2.1",
     "expo": "^44.0.0",
+    "expo-updates": "~0.11.6",
+    "moment": "^2.29.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
-    "react-native-web": "0.17.1"
+    "react-native-calendars": "^1.1280.0",
+    "react-native-gesture-handler": "~2.1.0",
+    "react-native-modal": "^11.10.0",
+    "react-native-modal-datetime-picker": "^8.0.6",
+    "react-native-reanimated": "~2.3.1",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "~3.10.1",
+    "react-native-system-notification": "^0.2.1",
+    "react-native-uuid": "^2.0.1",
+    "react-native-web": "0.17.1",
+    "uuid": "^7.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "gh-pages": "^3.2.3"
   },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
-  },
-  "version": "1.0.0",
-  "private": true,
-  "name": "events_listing"
+    "web": "expo start --web",
+    "build": "expo start build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
 }
